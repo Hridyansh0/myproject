@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --knn-blue: #003580;
+  --knn-blue-dark: #002060;
+  --knn-blue-mid: #1a4fa0;
+  --knn-orange: #e87722;
+  --knn-orange-light: #f59332;
+  --knn-red: #c0392b;
+  --knn-teal: #0097a7;
+  --knn-teal-light: #00bcd4;
+  --knn-gold: #ffd700;
+  --knn-bg: #f0f4f8;
+  --knn-white: #ffffff;
+  --knn-gray-light: #e8edf2;
+  --knn-gray: #8090a0;
+  --knn-text: #1a2a3a;
+  --knn-text-light: #4a5a6a;
+  --shadow-sm: 0 2px 8px rgba(0,53,128,0.12);
+  --shadow-md: 0 4px 20px rgba(0,53,128,0.18);
+  --shadow-lg: 0 8px 40px rgba(0,53,128,0.22);
+  --radius: 10px;
+  --radius-lg: 16px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+  background: var(--knn-bg);
+  color: var(--knn-text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: inherit; }
+input, select, textarea { font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--knn-gray-light); }
+::-webkit-scrollbar-thumb { background: var(--knn-blue); border-radius: 3px; }
