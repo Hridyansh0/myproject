@@ -35,10 +35,360 @@ const categoriesData = {
   ],
 };
 
-const mohallasData = {
-  hi: ['आर्य नगर', 'कल्याणपुर', 'गोविंद नगर', 'जाजमऊ', 'नौबस्ता', 'पनकी', 'बर्रा', 'बिठूर', 'मोतीझील', 'रावतपुर', 'लाल इमली', 'विकास नगर', 'स्वरूप नगर', 'हरजेंडर नगर'],
-  en: ['Arya Nagar', 'Kalyanpur', 'Govind Nagar', 'Jajmau', 'Naubasta', 'Panki', 'Barra', 'Bithoor', 'Motijheel', 'Rawatpur', 'Lal Imli', 'Vikas Nagar', 'Swaroop Nagar', 'Harjender Nagar'],
+// const mohallasData = {
+//   hi: ['आर्य नगर', 'कल्याणपुर', 'गोविंद नगर', 'जाजमऊ', 'नौबस्ता', 'पनकी', 'बर्रा', 'बिठूर', 'मोतीझील', 'रावतपुर', 'लाल इमली', 'विकास नगर', 'स्वरूप नगर', 'हरजेंडर नगर'],
+//   en: ['Arya Nagar', 'Kalyanpur', 'Govind Nagar', 'Jajmau', 'Naubasta', 'Panki', 'Barra', 'Bithoor', 'Motijheel', 'Rawatpur', 'Lal Imli', 'Vikas Nagar', 'Swaroop Nagar', 'Harjender Nagar'],
+// };
+
+const mohallasData = { 
+  
+  en: [
+  "LAXMI PURWA",
+  "RAI PURWA",
+  "ANWAR GANJ",
+  "SISAMAU SOUTH",
+  "HARBANSH MOHAL",
+  "CIVIL LINES",
+  "CHATTAI MOHAL",
+  "DALEL PURWA",
+  "COOPER GANJ",
+  "DANAKHORI",
+  "PATKAPUR",
+  "MAHESHAWARI MOHAL",
+  "CHOWK SARRAFA",
+  "PRADE",
+  "GENERAL GANJ",
+  "COLLECTOR GANJ",
+  "CHAMAN GANJ",
+  "NAZIR BAGH",
+  "YASHODA NAGAR WEST",
+  "JAJMAU NORTH",
+  "CHANDARI",
+
+  "SAFIPUR",
+  "CHAKERI",
+  "HANS PURAM AWAS VIKAS",
+  "KRISHNA NAGAR",
+  "GANDHIGRAM",
+  "HARJINDER NAGAR",
+  "OM PURWA",
+  "SANIGAWAN",
+  "HANS PURAM",
+  "YASHODA NAGAR EAST",
+  "DAHELI SUJANPUR KDA COLONY",
+  "TIWARIPUR",
+  "SWARDA JAYANTI VIHAR",
+  "NAUBASTA EAST",
+  "PASHUPANTI NAGAR",
+  "RAJEEV NAGAR NAUBASTA EAST",
+  "JAJMAU SOUTH",
+  "SHYAM NAGAR SUJAT GANJ",
+  "KAKADEO",
+  "HARIHARNATH SHASTRI NAGAR",
+
+  "SABZI MANDI KIDWAI NAGAR",
+  "USMANPUR",
+  "KHANDIPUR",
+  "AJEET GANJ",
+  "JUHI HAMIRPUR ROAD",
+  "TRANSPORT NAGAR",
+  "KARRHI",
+  "BARRA NORTH",
+  "BABU PURWA COLONY",
+  "JARAULI",
+  "JUHI KALA",
+  "BINGAWAN",
+  "BASANT VIHAR",
+  "KIDWAI NAGAR SOUTH",
+  "KIDWAI NAGAR NORTH",
+  "BEGAM PURWA",
+  "BABOO PURWA",
+
+  "CHUNNI GANJ",
+  "GWALTOLI",
+  "JAWAHAR NAGAR",
+  "BEHNA JHABHAR",
+  "OLD KANPUR",
+  "MECROBERT GANJ",
+  "ASHOK NAGAR",
+  "PERMAT",
+  "GANDHI NAGAR",
+  "SISAMAU NORTH",
+  "TILAK NAGAR",
+  "SUTHER GUNJ",
+  "BECON GANJ",
+  "TALAK MOHAL",
+  "COLNEL GANJ",
+
+  "GOVIND NAGAR HARIJAN BASTI",
+  "BHANNANAPURWA",
+  "NIRALA NAGAR",
+  "RAVIDAS PURAM",
+  "JUHI",
+  "FAZAL GANJ",
+  "RATANLAL NAGAR",
+  "World Bank Barra",
+  "GOVIND NAGAR SOUTH",
+  "PANKI",
+  "BARRA",
+  "SARAIMITA",
+  "GUJAIN COLONEY",
+  "SWARAJ NAGAR PANKI",
+  "BARRA WEST",
+  "SARVODAYA NAGAR",
+  "KAUSHAL PURI",
+  "GOVIND NAGAR NORTH",
+  "LAJPAT NAGAR",
+
+  "MASWANPUR",
+  "NARAMAU",
+  "KALYANPUR SOUTH",
+  "KALYANPUR(AWAS VIKAS)",
+  "NAVEEN NAGAR KAKADEO",
+  "NANKARI",
+  "AMBEDKAR NAGAR",
+  "VIJAY NAGAR",
+  "KALYANPUR NORTH",
+  "VISHNUPURI",
+  "NAWABGANJ",
+  "KHYORA",
+  "GITA NAGAR",
+  "BINAYAKPUR",
+  "RAWAT PUR",
+  "SAROJNI NAGAR"
+],
+
+hi : [ "लक्ष्मी पुरवा",
+  "राय पुरवा",
+  "अनवर गंज",
+  "सीसामऊ साउथ",
+  "हरबंश मोहल",
+  "सिविल लाइंस",
+  "चटाई मोहल",
+  "दलेल पुरवा",
+  "कूपर गंज",
+  "दानाखोरी",
+  "पटकापुर",
+  "महेश्वरी मोहल",
+  "चौक सर्राफा",
+  "परेड",
+  "जनरल गंज",
+  "कलेक्टर गंज",
+  "चमन गंज",
+  "नजीर बाग",
+  "यशोदा नगर वेस्ट",
+  "जाजमऊ नॉर्थ",
+  "चंदारी",
+
+  "सफीपुर",
+  "चकेरी",
+  "हंस पुरम आवास विकास",
+  "कृष्णा नगर",
+  "गांधीग्राम",
+  "हरजिंदर नगर",
+  "ओम पुरवा",
+  "सनीगवां",
+  "हंस पुरम",
+  "यशोदा नगर ईस्ट",
+  "दहेली सुजानपुर केडीए कॉलोनी",
+  "तिवारिपुर",
+  "स्वर्ण जयंती विहार",
+  "नौबस्ता ईस्ट",
+  "पशुपति नगर",
+  "राजीव नगर नौबस्ता ईस्ट",
+  "जाजमऊ साउथ",
+  "श्याम नगर सुजात गंज",
+  "काकादेव",
+  "हरिहरनाथ शास्त्री नगर",
+
+  "सब्जी मंडी किदवई नगर",
+  "उस्मानपुर",
+  "खंडीपुर",
+  "अजीत गंज",
+  "जूही हमीरपुर रोड",
+  "ट्रांसपोर्ट नगर",
+  "कर्रही",
+  "बर्रा नॉर्थ",
+  "बाबू पुरवा कॉलोनी",
+  "जरौली",
+  "जूही कला",
+  "बिंगवां",
+  "बसंत विहार",
+  "किदवई नगर साउथ",
+  "किदवई नगर नॉर्थ",
+  "बेगम पुरवा",
+  "बाबू पुरवा",
+
+  "चुन्नी गंज",
+  "ग्वालटोली",
+  "जवाहर नगर",
+  "बेहना झभर",
+  "ओल्ड कानपुर",
+  "मैकरोबर्ट गंज",
+  "अशोक नगर",
+  "परमट",
+  "गांधी नगर",
+  "सीसामऊ नॉर्थ",
+  "तिलक नगर",
+  "सुतर गंज",
+  "बेगम गंज",
+  "तलाक मोहल",
+  "कर्नलगंज",
+
+  "गोविंद नगर हरिजन बस्ती",
+  "भन्नानापुरवा",
+  "निराला नगर",
+  "रविदास पुरम",
+  "जूही",
+  "फजलगंज",
+  "रतनलाल नगर",
+  "वर्ल्ड बैंक बर्रा",
+  "गोविंद नगर साउथ",
+  "पनकी",
+  "बर्रा",
+  "सरायमीता",
+  "गुजैनी कॉलोनी",
+  "स्वराज नगर पनकी",
+  "बर्रा वेस्ट",
+  "सर्वोदय नगर",
+  "कौशलपुरी",
+  "गोविंद नगर नॉर्थ",
+  "लाजपत नगर",
+
+  "मस्वानपुर",
+  "नरमऊ",
+  "कल्याणपुर साउथ",
+  "कल्याणपुर (आवास विकास)",
+  "नवीन नगर काकादेव",
+  "ननकारी",
+  "अंबेडकर नगर",
+  "विजय नगर",
+  "कल्याणपुर नॉर्थ",
+  "विष्णुपुरी",
+  "नवाबगंज",
+  "ख्योरा",
+  "गीता नगर",
+  "बिनायकपुर",
+  "रावतपुर",
+  "सरोजनी नगर"]}
+
+
+  const hindiToEnglishAreaMap = {
+  "लक्ष्मी पुरवा": "LAXMI PURWA",
+  "राय पुरवा": "RAI PURWA",
+  "अनवर गंज": "ANWAR GANJ",
+  "सिसामऊ साउथ": "SISAMAU SOUTH",
+  "हरबंश मोहल": "HARBANSH MOHAL",
+  "सिविल लाइन्स": "CIVIL LINES",
+  "चट्टाई मोहल": "CHATTAI MOHAL",
+  "दलेल पुरवा": "DALEL PURWA",
+  "कूपर गंज": "COOPER GANJ",
+  "दानाखोरी": "DANAKHORI",
+  "पटकापुर": "PATKAPUR",
+  "महेश्वरी मोहल": "MAHESHAWARI MOHAL",
+  "चौक सर्राफा": "CHOWK SARRAFA",
+  "परेड": "PRADE",
+  "जनरल गंज": "GENERAL GANJ",
+  "कलेक्टर गंज": "COLLECTOR GANJ",
+  "चमन गंज": "CHAMAN GANJ",
+  "नज़ीर बाग": "NAZIR BAGH",
+  "यशोदा नगर पश्चिम": "YASHODA NAGAR WEST",
+  "जाजमऊ उत्तर": "JAJMAU NORTH",
+  "चंदारी": "CHANDARI",
+
+  "सफीपुर": "SAFIPUR",
+  "चकेरी": "CHAKERI",
+  "हंस पुरम आवास विकास": "HANS PURAM AWAS VIKAS",
+  "कृष्णा नगर": "KRISHNA NAGAR",
+  "गांधीग्राम": "GANDHIGRAM",
+  "हरजिंदर नगर": "HARJINDER NAGAR",
+  "ओम पुरवा": "OM PURWA",
+  "सनिगवां": "SANIGAWAN",
+  "हंस पुरम": "HANS PURAM",
+  "यशोदा नगर पूर्व": "YASHODA NAGAR EAST",
+  "दहेली सुजानपुर केडीए कॉलोनी": "DAHELI SUJANPUR KDA COLONY",
+  "तिवारीपुर": "TIWARIPUR",
+  "स्वर्ण जयंती विहार": "SWARDA JAYANTI VIHAR",
+  "नौबस्ता पूर्व": "NAUBASTA EAST",
+  "पशुपति नगर": "PASHUPANTI NAGAR",
+  "राजीव नगर नौबस्ता पूर्व": "RAJEEV NAGAR NAUBASTA EAST",
+  "जाजमऊ दक्षिण": "JAJMAU SOUTH",
+  "श्याम नगर सुजात गंज": "SHYAM NAGAR SUJAT GANJ",
+  "काकादेव": "KAKADEO",
+  "हरिहरनाथ शास्त्री नगर": "HARIHARNATH SHASTRI NAGAR",
+
+  "सब्जी मंडी किदवई नगर": "SABZI MANDI KIDWAI NAGAR",
+  "उस्मानपुर": "USMANPUR",
+  "खंडीपुर": "KHANDIPUR",
+  "अजीत गंज": "AJEET GANJ",
+  "जुही हमीरपुर रोड": "JUHI HAMIRPUR ROAD",
+  "ट्रांसपोर्ट नगर": "TRANSPORT NAGAR",
+  "कर्रही": "KARRHI",
+  "बर्रा उत्तर": "BARRA NORTH",
+  "बाबू पुरवा कॉलोनी": "BABU PURWA COLONY",
+  "जरौली": "JARAULI",
+  "जुही कला": "JUHI KALA",
+  "बिंगावां": "BINGAWAN",
+  "बसंत विहार": "BASANT VIHAR",
+  "किदवई नगर दक्षिण": "KIDWAI NAGAR SOUTH",
+  "किदवई नगर उत्तर": "KIDWAI NAGAR NORTH",
+  "बेगम पुरवा": "BEGAM PURWA",
+  "बाबू पुरवा": "BABOO PURWA",
+
+  "चुन्नी गंज": "CHUNNI GANJ",
+  "ग्वालटोली": "GWALTOLI",
+  "जवाहर नगर": "JAWAHAR NAGAR",
+  "बेहना झभर": "BEHNA JHABHAR",
+  "ओल्ड कानपुर": "OLD KANPUR",
+  "मैकरोबर्ट गंज": "MECROBERT GANJ",
+  "अशोक नगर": "ASHOK NAGAR",
+  "परमट": "PERMAT",
+  "गांधी नगर": "GANDHI NAGAR",
+  "सिसामऊ उत्तर": "SISAMAU NORTH",
+  "तिलक नगर": "TILAK NAGAR",
+  "सुथर गंज": "SUTHER GUNJ",
+  "बेकन गंज": "BECON GANJ",
+  "तलाक मोहल": "TALAK MOHAL",
+  "कर्नलगंज": "COLNEL GANJ",
+
+  "गोविंद नगर हरिजन बस्ती": "GOVIND NAGAR HARIJAN BASTI",
+  "भन्नानापुरवा": "BHANNANAPURWA",
+  "निराला नगर": "NIRALA NAGAR",
+  "रविदास पुरम": "RAVIDAS PURAM",
+  "जुही": "JUHI",
+  "फजलगंज": "FAZAL GANJ",
+  "रतनलाल नगर": "RATANLAL NAGAR",
+  "वर्ल्ड बैंक बर्रा": "World Bank Barra",
+  "गोविंद नगर दक्षिण": "GOVIND NAGAR SOUTH",
+  "पनकी": "PANKI",
+  "बर्रा": "BARRA",
+  "सरायमीता": "SARAIMITA",
+  "गुजैन कॉलोनी": "GUJAIN COLONEY",
+  "स्वराज नगर पनकी": "SWARAJ NAGAR PANKI",
+  "बर्रा पश्चिम": "BARRA WEST",
+  "सर्वोदय नगर": "SARVODAYA NAGAR",
+  "कौशल पुरी": "KAUSHAL PURI",
+  "गोविंद नगर उत्तर": "GOVIND NAGAR NORTH",
+  "लाजपत नगर": "LAJPAT NAGAR",
+
+  "मसवानपुर": "MASWANPUR",
+  "नरमऊ": "NARAMAU",
+  "कल्याणपुर दक्षिण": "KALYANPUR SOUTH",
+  "कल्याणपुर (आवास विकास)": "KALYANPUR(AWAS VIKAS)",
+  "नवीन नगर काकादेव": "NAVEEN NAGAR KAKADEO",
+  "ननकारी": "NANKARI",
+  "अंबेडकर नगर": "AMBEDKAR NAGAR",
+  "विजय नगर": "VIJAY NAGAR",
+  "कल्याणपुर उत्तर": "KALYANPUR NORTH",
+  "विष्णुपुरी": "VISHNUPURI",
+  "नवाबगंज": "NAWABGANJ",
+  "ख्योरा": "KHYORA",
+  "गीता नगर": "GITA NAGAR",
+  "बिनायकपुर": "BINAYAKPUR",
+  "रावत पुर": "RAWAT PUR",
+  "सरोजनी नगर": "SAROJNI NAGAR"
 };
+
 
 const t = {
   hi: {
@@ -99,6 +449,138 @@ const t = {
   },
 };
 
+
+const zones = {
+  zone1: [
+    "LAXMI PURWA",
+    "RAI PURWA",
+    "ANWAR GANJ",
+    "SISAMAU SOUTH",
+    "HARBANSH MOHAL",
+    "CIVIL LINES",
+    "CHATTAI MOHAL",
+    "DALEL PURWA",
+    "COOPER GANJ",
+    "DANAKHORI",
+    "PATKAPUR",
+    "MAHESHAWARI MOHAL",
+    "CHOWK SARRAFA",
+    "PRADE",
+    "GENERAL GANJ",
+    "COLLECTOR GANJ",
+    "CHAMAN GANJ",
+    "NAZIR BAGH",
+    "YASHODA NAGAR WEST",
+    "JAJMAU NORTH",
+    "CHANDARI"
+  ],
+
+  zone2: [
+    "SAFIPUR",
+    "CHAKERI",
+    "HANS PURAM AWAS VIKAS",
+    "KRISHNA NAGAR",
+    "GANDHIGRAM",
+    "HARJINDER NAGAR",
+    "OM PURWA",
+    "SANIGAWAN",
+    "HANS PURAM",
+    "YASHODA NAGAR EAST",
+    "DAHELI SUJANPUR KDA COLONY",
+    "TIWARIPUR",
+    "SWARDA JAYANTI VIHAR",
+    "NAUBASTA EAST",
+    "PASHUPANTI NAGAR",
+    "RAJEEV NAGAR NAUBASTA EAST",
+    "JAJMAU SOUTH",
+    "SHYAM NAGAR SUJAT GANJ",
+    "KAKADEO",
+    "HARIHARNATH SHASTRI NAGAR"
+  ],
+
+  zone3: [
+    "SABZI MANDI KIDWAI NAGAR",
+    "USMANPUR",
+    "KHANDIPUR",
+    "AJEET GANJ",
+    "JUHI HAMIRPUR ROAD",
+    "TRANSPORT NAGAR",
+    "NAUBASTA EAST",
+    "KARRHI",
+    "BARRA NORTH",
+    "BABU PURWA COLONY",
+    "JARAULI",
+    "JUHI KALA",
+    "BINGAWAN",
+    "BASANT VIHAR",
+    "KIDWAI NAGAR SOUTH",
+    "KIDWAI NAGAR NORTH",
+    "BEGAM PURWA",
+    "BABOO PURWA"
+  ],
+
+  zone4: [
+    "CHUNNI GANJ",
+    "GWALTOLI",
+    "JAWAHAR NAGAR",
+    "BEHNA JHABHAR",
+    "OLD KANPUR",
+    "MECROBERT GANJ",
+    "ASHOK NAGAR",
+    "PERMAT",
+    "GANDHI NAGAR",
+    "SISAMAU NORTH",
+    "TILAK NAGAR",
+    "SUTHER GUNJ",
+    "BECON GANJ",
+    "TALAK MOHAL",
+    "COLNEL GANJ"
+  ],
+
+  zone5: [
+    "GOVIND NAGAR HARIJAN BASTI",
+    "BHANNANAPURWA",
+    "NIRALA NAGAR",
+    "RAVIDAS PURAM",
+    "JUHI",
+    "FAZAL GANJ",
+    "RATANLAL NAGAR",
+    "World Bank Barra",
+    "GOVIND NAGAR SOUTH",
+    "PANKI",
+    "BARRA",
+    "SARAIMITA",
+    "GUJAIN COLONEY",
+    "SWARAJ NAGAR PANKI",
+    "BARRA WEST",
+    "SARVODAYA NAGAR",
+    "KAUSHAL PURI",
+    "GOVIND NAGAR NORTH",
+    "LAJPAT NAGAR"
+  ],
+
+  zone6: [
+    "MASWANPUR",
+    "NARAMAU",
+    "KALYANPUR SOUTH",
+    "KALYANPUR(AWAS VIKAS)",
+    "NAVEEN NAGAR KAKADEO",
+    "NANKARI",
+    "AMBEDKAR NAGAR",
+    "VIJAY NAGAR",
+    "KALYANPUR NORTH",
+    "VISHNUPURI",
+    "NAWABGANJ",
+    "KHYORA",
+    "GITA NAGAR",
+    "BINAYAKPUR",
+    "RAWAT PUR",
+    "SAROJNI NAGAR"
+  ]
+};
+
+
+
 export default function Complaint() {
   const navigate = useNavigate();
   const { lang } = useLang();
@@ -117,17 +599,57 @@ export default function Complaint() {
 
   const selectedCat = categories.find(c => c.id === form.category);
 
+  const getZoneByArea = (area) => {
+
+  // Hindi ko English me convert karo
+  const convertedArea =
+    hindiToEnglishAreaMap[area] || area;
+
+  const upperArea = convertedArea.toUpperCase();
+
+  for (const zone in zones) {
+
+    const found = zones[zone].find(
+      item => item.toUpperCase() === upperArea
+    );
+
+    if (found) {
+      return zone.toUpperCase();
+    }
+  }
+
+  return '';
+};
+
   const handleChange = (field, val) => {
     setForm(f => ({ ...f, [field]: val }));
     if (field === 'category') setForm(f => ({ ...f, category: val, subCategory: '' }));
     if (field === 'mohalla') {
-      setForm(f => ({
-        ...f,
-        mohalla: val,
-        kshetra: val ? tx.autoKshetra : '',
-        ward: val ? `${tx.wardPrefix}${Math.floor(Math.random() * 110) + 1}` : '',
-      }));
-    }
+
+  const selectedZone = getZoneByArea(val);
+
+  setForm(f => ({
+    ...f,
+
+    mohalla: val,
+
+    // Dynamic Zone
+    kshetra: selectedZone,
+
+    // Random Ward
+    ward: val
+      ? `${tx.wardPrefix}${Math.floor(Math.random() * 110) + 1}`
+      : '',
+  }));
+}
+    // if (field === 'mohalla') {
+    //   setForm(f => ({
+    //     ...f,
+    //     mohalla: val,
+    //     kshetra: val ? tx.autoKshetra : '',
+    //     ward: val ? `${tx.wardPrefix}${Math.floor(Math.random() * 110) + 1}` : '',
+    //   }));
+    // }
   };
 
   const handleFiles = (files) => {
@@ -141,14 +663,68 @@ export default function Complaint() {
 
   const removePhoto = (i) => setPhotos(p => p.filter((_, idx) => idx !== i));
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!form.category || !form.subCategory || !form.mohalla || !form.name || !form.mobile || !form.description) {
-      alert(tx.alertMsg);
-      return;
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (!form.category || !form.subCategory || !form.mohalla || !form.name || !form.mobile || !form.description) {
+  //     alert(tx.alertMsg);
+  //     return;
+  //   }
+  //   setSubmitted(true);
+  // };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  
+  // Validation
+  if (!form.category || !form.subCategory || !form.mohalla || !form.name || !form.mobile || !form.description) {
+    alert('कृपया सभी अनिवार्य (*) फ़ील्ड भरें।');
+    return;
+  }
+
+  // Create FormData object
+  const formData = new FormData();
+  formData.append('category', form.category);
+  formData.append('subCategory', form.subCategory);
+  formData.append('mohalla', form.mohalla);
+  formData.append('kshetra', form.kshetra);
+  formData.append('ward', form.ward);
+  formData.append('name', form.name);
+  formData.append('mobile', form.mobile);
+  formData.append('email', form.email);
+  formData.append('description', form.description);
+  formData.append('sthan', form.sthan);
+  formData.append('pata', form.pata);
+
+  // Append photos (assuming photos array stores actual File objects)
+  // If your photos are dataURLs, see note below
+  photos.forEach(photo => {
+    if (photo.file) {
+      formData.append('photos', photo.file);
     }
-    setSubmitted(true);
-  };
+  });
+
+  console.log('Submitting complaint with data:', form);
+
+  try {
+    const response = await fetch('http://localhost:5000/api/complaints', {
+      method: 'POST',
+      body: formData,  // No 'Content-Type' header - browser sets multipart boundary automatically
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      setSubmitted(true);
+      // Optional: store token for success display
+      localStorage.setItem('lastComplaintToken', data.token);
+    } else {
+     
+      alert('शिकायत दर्ज नहीं हुई: ' + (data.error || 'कोई त्रुटि'));
+    }
+  } catch (err) {
+    console.error(err);
+    alert('नेटवर्क एरर। कृपया बाद में प्रयास करें।');
+  }
+};
 
   if (submitted) {
     const token = 'KNN' + Date.now().toString().slice(-8);
@@ -225,6 +801,7 @@ export default function Complaint() {
 
           {/* Row 2: SubCategory + Kshetra */}
           <div className="form-row">
+            
             <div className="form-group">
               <label>{tx.subCatLabel}</label>
               <select
@@ -238,6 +815,8 @@ export default function Complaint() {
                 ))}
               </select>
             </div>
+
+
             <div className="form-group">
               <label>{tx.kshetraLabel}</label>
               <input type="text" value={form.kshetra} readOnly placeholder={tx.kshetraReadonly} className="readonly-input"/>
